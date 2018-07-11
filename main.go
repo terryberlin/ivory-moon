@@ -117,87 +117,87 @@ type (
 //PostEmployee : PostEmployee is a structure for posting employee data.
 type (
 	PostEmployee struct {
-		EmployeeID            *string `db:"Empl_ID" json:"employeeID"`
-		Unit                  *string `db:"Store_no" json:"unit"`
-		EmployeeNumber        *string `db:"Emp_no" json:"employeeNumber"`
-		SSN                   *string `db:"SSN" json:"ssn"`
-		LastName              *string `db:"Last_Name" json:"lastName"`
-		FirstName             *string `db:"First_Name" json:"firstName"`
-		Address               *string `db:"Address" json:"address"`
-		City                  *string `db:"City" json:"city"`
-		State                 *string `db:"State" json:"state"`
-		Zip                   *string `db:"Zip" json:"zip"`
-		Phone                 *string `db:"Phone" json:"phone"`
-		BirthDate             *string `db:"Birth_Dt" json:"birthDate"`
-		HireDate              *string `db:"Hire_Date" json:"hireDate"`
-		PreviousSSN           *string `db:"Prev_SSN" json:"previousSsn"`
-		W4Status              *string `db:"W4Status" json:"w4Status"`
-		Allowances            *string `db:"Allowances" json:"allowances"`
-		EffectDate            *string `db:"Effect_Dt" json:"effectDate"`
-		CurrentRate           *string `db:"Curr_Rate" json:"currentRate"`
-		PreviousRate          *string `db:"Prev_Rate" json:"previousRate"`
-		JobCode               *string `db:"Jobcode" json:"jobCode"`
-		CrewRate              *string `db:"CrewRate" json:"crewRate"`
-		OtherRate             *string `db:"OtherRate" json:"otherRate"`
-		PermanentSupervisor   *string `db:"PermSupervisor" json:"permanentSupervisor"`
-		SalariedManager       *string `db:"SalariedMgr" json:"salariedManager"`
-		Terminated            *string `db:"Term" json:"terminated"`
-		Fired                 *string `db:"Fired" json:"fired"`
-		ReHire                *string `db:"ReHire" json:"rehire"`
-		TerminationReason     *string `db:"Term_Reason" json:"terminationReason"`
-		TerminatedDate        *string `db:"DateTermed" json:"terminatedDate"`
-		Jobcode2              *string `db:"Jobcode2" json:"jobCode2"`
-		PayRate2              *string `db:"PayRate2" json:"payRate2"`
-		EffectiveDate2        *string `db:"Effec_Dt2" json:"effecDate2"`
-		OldRate2              *string `db:"OldRate2" json:"oldRate2"`
-		Jobcode3              *string `db:"Jobcode3" json:"jobCode3"`
-		PayRate3              *string `db:"PayRate3" json:"payRate3"`
-		EffectiveDate3        *string `db:"Effec_Dt3" json:"effecDate3"`
-		OldRate3              *string `db:"OldRate3" json:"oldRate3"`
-		Jobcode4              *string `db:"Jobcode4" json:"jobCode4"`
-		PayRate4              *string `db:"PayRate4" json:"payRate4"`
-		EffectiveDate4        *string `db:"Effec_Dt4" json:"effecDate4"`
-		OldRate4              *string `db:"OldRate4" json:"oldrate4"`
-		Jobcode5              *string `db:"Jobcode5" json:"jobcode5"`
-		PayRate5              *string `db:"PayRate5" json:"payrate5"`
-		EffectiveDate5        *string `db:"Effec_Dt5" json:"effecDate5"`
-		OldRate5              *string `db:"OldRate5" json:"oldrate5"`
-		Overtime1             *string `db:"Overtime1" json:"overtime1"`
-		Overtime2             *string `db:"Overtime2" json:"overtime2"`
-		Overtime3             *string `db:"Overtime3" json:"overtime3"`
-		Overtime4             *string `db:"Overtime4" json:"overtime4"`
-		Overtime5             *string `db:"Overtime5" json:"overtime5"`
-		Gender                *string `db:"Gender" json:"gender"`
-		PayrollID             *string `db:"PayrollID" json:"payrollid"`
-		StateAllowances       *string `db:"StateAllowances" json:"stateAllowances"`
-		TransferToStore       *string `db:"TransferToStore" json:"transferTostore"`
-		MiddleInitial         *string `db:"MiddleInitial" json:"middleInitial"`
-		AdditionalWithholding *string `db:"AddlWithholding" json:"additionalWithholding"`
-		TaxExempt             *string `db:"TaxExempt" json:"taxExempt"`
-		MaidenName            *string `db:"MaidenName" json:"maidenName"`
-		ImportDate            *string `db:"Import_Date" json:"importDate"`
-		Race                  *string `db:"Race" json:"race"`
-		BorrowedEmployee      *string `db:"BorrowedEmpl" json:"borrowedEmployee"`
-		HomeStore             *string `db:"HomeStore" json:"homeStore"`
-		I9Code                *string `db:"I9Code" json:"i9Code"`
-		InfoSent              *string `db:"Info_Sent" json:"infoSent"`
-		DateSent              *string `db:"Date_Sent" json:"dateSent"`
-		BonusEligible         *string `db:"BonusEligible" json:"bonusEligible"`
-		BonusRate             *string `db:"BonusRate" json:"bonusRate"`
-		SalaryClockIn         *string `db:"SalaryClockIn" json:"salaryClockin"`
-		InSchool              *string `db:"InSchool" json:"inSchool"`
-		VacationSchedule      *string `db:"VacationSchedule" json:"vacationSchedule"`
-		HRDocuments           *string `db:"HRDocuments" json:"hrDocuments"`
-		ApartmentNumber       *string `db:"AptNumber" json:"apartmentNumber"`
-		DepositType           *string `db:"DepositType" json:"depositType"`
-		RoutingNumber         *string `db:"RoutingNumber" json:"routingNumber"`
-		AccountType           *string `db:"AccountType" json:"accountType"`
-		AccountNumber         *string `db:"AccountNumber" json:"accountNumber"`
-		EmailAddress          *string `db:"EmailAddress" json:"emailAddress"`
-		ManagerNote           *string `db:"ManagerNote" json:"managerNote"`
-		InactiveEmployee      *string `db:"InactiveEmpl" json:"inactiveEmployee"`
-		IDNumber              *string `db:"IDNumber" json:"idNumber"`
-		PreviousIDNumber      *string `db:"PrevIDNumber" json:"previousIdnumber"`
+		EmployeeID            *string `db:"employeeID" json:"employeeID"`
+		Unit                  *string `db:"unit" json:"unit"`
+		EmployeeNumber        *string `db:"employeeNumber" json:"employeeNumber"`
+		SSN                   *string `db:"ssn" json:"ssn"`
+		LastName              *string `db:"lastName" json:"lastName"`
+		FirstName             *string `db:"firstName" json:"firstName"`
+		Address               *string `db:"address" json:"address"`
+		City                  *string `db:"city" json:"city"`
+		State                 *string `db:"state" json:"state"`
+		Zip                   *string `db:"zip" json:"zip"`
+		Phone                 *string `db:"phone" json:"phone"`
+		BirthDate             *string `db:"birthDate" json:"birthDate"`
+		HireDate              *string `db:"hireDate" json:"hireDate"`
+		PreviousSSN           *string `db:"previousSsn" json:"previousSsn"`
+		W4Status              *string `db:"w4Status" json:"w4Status"`
+		Allowances            *string `db:"allowances" json:"allowances"`
+		EffectDate            *string `db:"effectiveDate" json:"effectiveDate"`
+		CurrentRate           *string `db:"currentRate" json:"currentRate"`
+		PreviousRate          *string `db:"previousRate" json:"previousRate"`
+		JobCode               *string `db:"jobCode" json:"jobCode"`
+		CrewRate              *string `db:"crewRate" json:"crewRate"`
+		OtherRate             *string `db:"otherRate" json:"otherRate"`
+		PermanentSupervisor   *string `db:"permanentSupervisor" json:"permanentSupervisor"`
+		SalariedManager       *string `db:"salariedManager" json:"salariedManager"`
+		Terminated            *string `db:"terminated" json:"terminated"`
+		Fired                 *string `db:"fired" json:"fired"`
+		ReHire                *string `db:"rehire" json:"rehire"`
+		TerminationReason     *string `db:"terminationReason" json:"terminationReason"`
+		TerminatedDate        *string `db:"terminatedDate" json:"terminatedDate"`
+		Jobcode2              *string `db:"jobCode2" json:"jobCode2"`
+		PayRate2              *string `db:"payRate2" json:"payRate2"`
+		EffectiveDate2        *string `db:"effectiveDate2" json:"effectiveDate2"`
+		OldRate2              *string `db:"oldRate2" json:"oldRate2"`
+		Jobcode3              *string `db:"jobCode3" json:"jobCode3"`
+		PayRate3              *string `db:"payRate3" json:"payRate3"`
+		EffectiveDate3        *string `db:"effectiveDate3" json:"effectiveDate3"`
+		OldRate3              *string `db:"oldRate3" json:"oldRate3"`
+		Jobcode4              *string `db:"jobCode4" json:"jobCode4"`
+		PayRate4              *string `db:"payRate4" json:"payRate4"`
+		EffectiveDate4        *string `db:"effectiveDate4" json:"effectiveDate4"`
+		OldRate4              *string `db:"oldRate4" json:"oldRate4"`
+		Jobcode5              *string `db:"jobCode5" json:"jobCode5"`
+		PayRate5              *string `db:"payRate5" json:"payRate5"`
+		EffectiveDate5        *string `db:"effectiveDate5" json:"effectiveDate5"`
+		OldRate5              *string `db:"oldRate5" json:"oldRate5"`
+		Overtime1             *string `db:"overtime1" json:"overtime1"`
+		Overtime2             *string `db:"overtime2" json:"overtime2"`
+		Overtime3             *string `db:"overtime3" json:"overtime3"`
+		Overtime4             *string `db:"overtime4" json:"overtime4"`
+		Overtime5             *string `db:"overtime5" json:"overtime5"`
+		Gender                *string `db:"gender" json:"gender"`
+		PayrollID             *string `db:"payrollId" json:"payrollId"`
+		StateAllowances       *string `db:"stateAllowances" json:"stateAllowances"`
+		TransferToStore       *string `db:"transferTostore" json:"transferTostore"`
+		MiddleInitial         *string `db:"middleInitial" json:"middleInitial"`
+		AdditionalWithholding *string `db:"additionalWithholding" json:"additionalWithholding"`
+		TaxExempt             *string `db:"taxExempt" json:"taxExempt"`
+		MaidenName            *string `db:"maidenName" json:"maidenName"`
+		ImportDate            *string `db:"importDate" json:"importDate"`
+		Race                  *string `db:"race" json:"race"`
+		BorrowedEmployee      *string `db:"borrowedEmployee" json:"borrowedEmployee"`
+		HomeStore             *string `db:"homeStore" json:"homeStore"`
+		I9Code                *string `db:"i9Code" json:"i9Code"`
+		InfoSent              *string `db:"infoSent" json:"infoSent"`
+		DateSent              *string `db:"dateSent" json:"dateSent"`
+		BonusEligible         *string `db:"bonusEligible" json:"bonusEligible"`
+		BonusRate             *string `db:"bonusRate" json:"bonusRate"`
+		SalaryClockIn         *string `db:"salaryClockin" json:"salaryClockin"`
+		InSchool              *string `db:"inSchool" json:"inSchool"`
+		VacationSchedule      *string `db:"vacationSchedule" json:"vacationSchedule"`
+		HRDocuments           *string `db:"hrDocuments" json:"hrDocuments"`
+		ApartmentNumber       *string `db:"apartmentNumber" json:"apartmentNumber"`
+		DepositType           *string `db:"depositType" json:"depositType"`
+		RoutingNumber         *string `db:"routingNumber" json:"routingNumber"`
+		AccountType           *string `db:"accountType" json:"accountType"`
+		AccountNumber         *string `db:"accountNumber" json:"accountNumber"`
+		EmailAddress          *string `db:"emailAddress" json:"emailAddress"`
+		ManagerNote           *string `db:"managerNote" json:"managerNote"`
+		InactiveEmployee      *string `db:"inactiveEmployee" json:"inactiveEmployee"`
+		IDNumber              *string `db:"idNumber" json:"idNumber"`
+		PreviousIDNumber      *string `db:"previousIdnumber" json:"previousIdnumber"`
 	}
 )
 
@@ -213,26 +213,26 @@ func GetEmployees(w http.ResponseWriter, r *http.Request) {
 
 	//sql := `Exec get_employee_attributes $1`
 	sql := `select 
-		  e.[Empl_ID]
-		, e.[Store_no]
-		, e.[Emp_no]
-		, e.[SSN]
-		, e.[Last_Name]
-		, e.[First_Name]
-		, e.[Address]
-		, e.[City]
-		, e.[State]
-		, e.[Zip]
-		, e.[Phone]
+		  rtrim(e.[Empl_ID]) as Empl_ID
+		, rtrim(e.[Store_no]) as Store_no
+		, rtrim(e.[Emp_no]) as Emp_no
+		, rtrim(e.[SSN]) as SSN
+		, rtrim(e.[Last_Name]) as Last_Name
+		, rtrim(e.[First_Name]) as First_Name
+		, rtrim(e.[Address]) as Address
+		, rtrim(e.[City]) as City
+		, rtrim(e.[State]) as State
+		, rtrim(e.[Zip]) as Zip
+		, rtrim(e.[Phone]) as Phone
 		, e.[Birth_Dt]
 		, e.[Hire_Date]
-		, e.[Prev_SSN]
-		, e.[W4Status]
-		, e.[Allowances]
+		, rtrim(e.[Prev_SSN]) as Prev_SSN
+		, rtrim(e.[W4Status]) as W4Status
+		, rtrim(e.[Allowances]) as Allowances
 		, e.[Effect_Dt]
 		, e.[Curr_Rate]
 		, e.[Prev_Rate]
-		, e.[Jobcode]
+		, rtrim(e.[Jobcode]) as Jobcode
 		, e.[CrewRate]
 		, e.[OtherRate]
 		, e.[PermSupervisor]
@@ -240,7 +240,7 @@ func GetEmployees(w http.ResponseWriter, r *http.Request) {
 		, e.[Term]
 		, e.[Fired]
 		, e.[ReHire]
-		, e.[Term_Reason]
+		, rtrim(e.[Term_Reason]) as Term_Reason
 		, e.[DateTermed]
 		, e.[Jobcode2]
 		, e.[PayRate2]
@@ -263,18 +263,18 @@ func GetEmployees(w http.ResponseWriter, r *http.Request) {
 		, e.[Overtime3]
 		, e.[Overtime4]
 		, e.[Overtime5]
-		, e.[Gender]
-		, e.[PayrollID]
-		, e.[StateAllowances]
-		, e.[TransferToStore]
-		, e.[MiddleInitial]
+		, rtrim(e.[Gender]) as Gender
+		, rtrim(e.[PayrollID]) as PayrollID
+		, rtrim(e.[StateAllowances]) as StateAllowances
+		, rtrim(e.[TransferToStore]) as TransferToStore
+		, rtrim(e.[MiddleInitial]) as MiddleInitial
 		, e.[AddlWithholding]
 		, e.[TaxExempt]
-		, e.[MaidenName]
+		, rtrim(e.[MaidenName]) as MaidenName
 		, e.[Import_Date]
-		, e.[Race]
+		, rtrim(e.[Race]) as Race
 		, e.[BorrowedEmpl]
-		, e.[HomeStore]
+		, rtrim(e.[HomeStore]) as HomeStore
 		, e.[I9Code]
 		, e.[Info_Sent]
 		, e.[Date_Sent]
@@ -314,21 +314,94 @@ func GetEmployees(w http.ResponseWriter, r *http.Request) {
 //PostEmployees : PostEmployees is a function for posting employee data.  The url accepts serveral arguments for employee demographic information.
 func PostEmployees(w http.ResponseWriter, r *http.Request) {
 
-	// unitid := r.URL.Query().Get("unitid")
-	// identifier := r.URL.Query().Get("identifier")
-
 	employeeID := r.URL.Query().Get("employeeID")
 	unit := r.URL.Query().Get("unit")
 	employeeNumber := r.URL.Query().Get("employeeNumber")
+	ssn := r.URL.Query().Get("ssn")
+	firstName := r.URL.Query().Get("firstName")
+	lastName := r.URL.Query().Get("lastName")
+	address := r.URL.Query().Get("address")
+	city := r.URL.Query().Get("city")
+	state := r.URL.Query().Get("state")
+	zip := r.URL.Query().Get("zip")
+	phone := r.URL.Query().Get("phone")
+	birthDate := r.URL.Query().Get("birthDate")
+	hireDate := r.URL.Query().Get("hireDate")
+	previousSsn := r.URL.Query().Get("previousSsn")
+	w4Status := r.URL.Query().Get("w4Status")
+	allowances := r.URL.Query().Get("allowances")
+	effectiveDate := r.URL.Query().Get("effectiveDate")
+	currentRate := r.URL.Query().Get("currentRate")
+	previousRate := r.URL.Query().Get("previousRate")
+	jobCode := r.URL.Query().Get("jobCode")
+	crewRate := r.URL.Query().Get("crewRate")
+	otherRate := r.URL.Query().Get("otherRate")
+	permanentSupervisor := r.URL.Query().Get("permanentSupervisor")
+	salariedManager := r.URL.Query().Get("salariedManager")
+	terminated := r.URL.Query().Get("terminated")
+	fired := r.URL.Query().Get("fired")
+	rehire := r.URL.Query().Get("rehire")
+	terminationReason := r.URL.Query().Get("terminationReason")
+	terminatedDate := r.URL.Query().Get("terminatedDate")
+	jobCode2 := r.URL.Query().Get("jobCode2")
+	payRate2 := r.URL.Query().Get("payRate2")
+	effectiveDatet2 := r.URL.Query().Get("effectiveDatet2")
+	oldRate2 := r.URL.Query().Get("oldRate2")
+	jobCode3 := r.URL.Query().Get("jobCode3")
+	payRate3 := r.URL.Query().Get("payRate3")
+	effectiveDatet3 := r.URL.Query().Get("effectiveDatet3")
+	oldRate3 := r.URL.Query().Get("oldRate3")
+	jobCode4 := r.URL.Query().Get("jobCode4")
+	payRate4 := r.URL.Query().Get("payRate4")
+	effectiveDatet4 := r.URL.Query().Get("effectiveDatet4")
+	oldRate4 := r.URL.Query().Get("oldRate4")
+	jobCode5 := r.URL.Query().Get("jobCode5")
+	payRate5 := r.URL.Query().Get("payRate5")
+	effectiveDatet5 := r.URL.Query().Get("effectiveDatet5")
+	oldRate5 := r.URL.Query().Get("oldRate5")
+	overtime1 := r.URL.Query().Get("overtime1")
+	overtime2 := r.URL.Query().Get("overtime2")
+	overtime3 := r.URL.Query().Get("overtime3")
+	overtime4 := r.URL.Query().Get("overtime4")
+	overtime5 := r.URL.Query().Get("overtime5")
+	gender := r.URL.Query().Get("gender")
+	payrollId := r.URL.Query().Get("payrollId")
+	stateAllowances := r.URL.Query().Get("stateAllowances")
+	transferTostore := r.URL.Query().Get("transferTostore")
+	middleInitial := r.URL.Query().Get("middleInitial")
+	additionalWithholding := r.URL.Query().Get("additionalWithholding")
+	taxExempt := r.URL.Query().Get("taxExempt")
+	maidenName := r.URL.Query().Get("maidenName")
+	importDate := r.URL.Query().Get("importDate")
+	race := r.URL.Query().Get("race")
+	borrowedEmployee := r.URL.Query().Get("borrowedEmployee")
+	homeStore := r.URL.Query().Get("homeStore")
+	i9Code := r.URL.Query().Get("i9Code")
+	infoSent := r.URL.Query().Get("infoSent")
+	dateSent := r.URL.Query().Get("dateSent")
+	bonusEligible := r.URL.Query().Get("bonusEligible")
+	bonusRate := r.URL.Query().Get("bonusRate")
+	salaryClockin := r.URL.Query().Get("salaryClockin")
+	inSchool := r.URL.Query().Get("inSchool")
+	vacationSchedule := r.URL.Query().Get("vacationSchedule")
+	hrDocuments := r.URL.Query().Get("hrDocuments")
+	apartmentNumber := r.URL.Query().Get("apartmentNumber")
+	depositType := r.URL.Query().Get("depositType")
+	routingNumber := r.URL.Query().Get("routingNumber")
+	accountType := r.URL.Query().Get("accountType")
+	accountNumber := r.URL.Query().Get("accountNumber")
+	emailAddress := r.URL.Query().Get("emailAddress")
+	managerNote := r.URL.Query().Get("managerNote")
+	inactiveEmployee := r.URL.Query().Get("inactiveEmployee")
+	idNumber := r.URL.Query().Get("idNumber")
+	previousIdnumber := r.URL.Query().Get("previousIdnumber")
 
-	//sql := `Exec post_employee_attributes $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43`
-	sql := `Exec post_employee_attributes $1, $2, $3`
+	sql := `Exec post_employee_attributes $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50, $51, $52, $53, $54, $55, $56, $57, $58, $59, $60, $61, $62, $63, $64, $65, $66, $67, $68, $69, $70, $71, $72, $73, $74, $75, $76, $77, $78, $79, $80, $81`
 	postemployees := []PostEmployee{}
 
-	//fmt.Println(employee_from, employee, org, inventory_group, company, market, dm, street, city, state, zip, employee_name, phone, concept, consent, region, fbc, coop, dc, plu_category, labor_guide, import_group, pos, error_guide, computer, account, vendor, facility, quickcook, new_construct, reader, longitude, latitude, golive, fiscal_seed, tax, state_tax, prep_guide, groups_plu, batch_meat, active, upload, refill)
+	//fmt.Println(employeeID, unit, employeeNumber, ssn)
 
-	//err := DB().Select(&postemployees, sql, employee_from, employee, org, inventory_group, company, market, dm, street, city, state, zip, employee_name, phone, concept, consent, region, fbc, coop, dc, plu_category, labor_guide, import_group, pos, error_guide, computer, account, vendor, facility, quickcook, new_construct, reader, longitude, latitude, golive, fiscal_seed, tax, state_tax, prep_guide, groups_plu, batch_meat, active, upload, refill)
-	err := DB().Select(&postemployees, sql, employeeID, unit, employeeNumber)
+	err := DB().Select(&postemployees, sql, employeeID, unit, employeeNumber, ssn, firstName, lastName, address, city, state, zip, phone, birthDate, hireDate, previousSsn, w4Status, allowances, effectiveDate, currentRate, previousRate, jobCode, crewRate, otherRate, permanentSupervisor, salariedManager, terminated, fired, rehire, terminationReason, terminatedDate, jobCode2, payRate2, effectiveDatet2, oldRate2, jobCode3, payRate3, effectiveDatet3, oldRate3, jobCode4, payRate4, effectiveDatet4, oldRate4, jobCode5, payRate5, effectiveDatet5, oldRate5, overtime1, overtime2, overtime3, overtime4, overtime5, gender, payrollId, stateAllowances, transferTostore, middleInitial, additionalWithholding, taxExempt, maidenName, importDate, race, borrowedEmployee, homeStore, i9Code, infoSent, dateSent, bonusEligible, bonusRate, salaryClockin, inSchool, vacationSchedule, hrDocuments, apartmentNumber, depositType, routingNumber, accountType, accountNumber, emailAddress, managerNote, inactiveEmployee, idNumber, previousIdnumber)
 	if err != nil {
 		log.Println(err)
 	}
@@ -390,87 +463,87 @@ const docList = `
 		<br>
 		<br>
 		Post Changes <input type="submit" value="Post">
-		<ul>Employee Number: <input type="text" maxlength="5" size="4" name="EmployeeNumber" value={{ .EmployeeNumber }}></input></ul>
-		<ul>Employee ID: <input type="text" maxlength="20" size="15" name="EmployeeID" value={{ .EmployeeID }}></input></ul>
-		<ul>Unit: <input type="text" maxlength="20" size="15" name="Unit" value={{ .Unit }}></input></ul>
-		<ul>SSN: <input type="password" maxlength="20" size="15" name="SSN" value={{ .SSN }}></input></ul>
-		<ul>First Name: <input type="text" maxlength="20" size="15" name="FirstName" value={{ .FirstName }}></input></ul>
-		<ul>Last Name: <input type="text" maxlength="20" size="15" name="LastName" value={{ .LastName }}></input></ul>
-		<ul>Address: <input type="text" maxlength="20" size="15" name="Address" value={{ .Address }}></input></ul>
-		<ul>City: <input type="text" maxlength="20" size="15" name="City" value={{ .City }}></input></ul>
-		<ul>State: <input type="text" maxlength="20" size="15" name="State" value={{ .State }}></input></ul>
-		<ul>Zip: <input type="text" maxlength="20" size="15" name="Zip" value={{ .Zip }}></input></ul>
-		<ul>Phone: <input type="text" maxlength="20" size="15" name="Phone" value={{ .Phone }}></input></ul>
-		<ul>BirthDate: <input type="text" maxlength="20" size="15" name="BirthDate" value={{ .BirthDate }}></input></ul>
-		<ul>HireDate: <input type="text" maxlength="20" size="15" name="HireDate" value={{ .HireDate }}></input></ul>
-		<ul>PreviousSSN: <input type="text" maxlength="20" size="15" name="PreviousSSN" value={{ .PreviousSSN }}></input></ul>
-		<ul>W4Status: <input type="text" maxlength="20" size="15" name="W4Status" value={{ .W4Status }}></input></ul>
-		<ul>Allowances: <input type="text" maxlength="20" size="15" name="Allowances" value={{ .Allowances }}></input></ul>
-		<ul>EffectDate: <input type="text" maxlength="20" size="15" name="EffectDate" value={{ .EffectDate }}></input></ul>
-		<ul>CurrentRate: <input type="text" maxlength="20" size="15" name="CurrentRate" value={{ .CurrentRate }}></input></ul>
-		<ul>PreviousRate: <input type="text" maxlength="20" size="15" name="PreviousRate" value={{ .PreviousRate }}></input></ul>
-		<ul>Jobcode: <input type="text" maxlength="20" size="15" name="Jobcode" value={{ .Jobcode }}></input></ul>
-		<ul>CrewRate: <input type="text" maxlength="20" size="15" name="CrewRate" value={{ .CrewRate }}></input></ul>
-		<ul>OtherRate: <input type="text" maxlength="20" size="15" name="OtherRate" value={{ .OtherRate }}></input></ul>
-		<ul>PermanentSupervisor: <input type="text" maxlength="20" size="15" name="PermanentSupervisor" value={{ .PermanentSupervisor }}></input></ul>
-		<ul>SalariedManager: <input type="text" maxlength="20" size="15" name="SalariedManager" value={{ .SalariedManager }}></input></ul>
-		<ul>Terminated: <input type="text" maxlength="20" size="15" name="Terminated" value={{ .Terminated }}></input></ul>
-		<ul>Fired: <input type="text" maxlength="20" size="15" name="Fired" value={{ .Fired }}></input></ul>
-		<ul>ReHire: <input type="text" maxlength="20" size="15" name="ReHire" value={{ .ReHire }}></input></ul>
-		<ul>TerminationReason: <input type="text" maxlength="20" size="15" name="TerminationReason" value={{ .TerminationReason }}></input></ul>
-		<ul>TerminatedDate: <input type="text" maxlength="20" size="15" name="TerminatedDate" value={{ .TerminatedDate }}></input></ul>
-		<ul>Jobcode2: <input type="text" maxlength="20" size="15" name="Jobcode2" value={{ .Jobcode2 }}></input></ul>
-		<ul>PayRate2: <input type="text" maxlength="20" size="15" name="PayRate2" value={{ .PayRate2 }}></input></ul>
-		<ul>EffectiveDate2: <input type="text" maxlength="20" size="15" name="EffectiveDate2" value={{ .EffectiveDate2 }}></input></ul>
-		<ul>OldRate2: <input type="text" maxlength="20" size="15" name="OldRate2" value={{ .OldRate2 }}></input></ul>
-		<ul>Jobcode3: <input type="text" maxlength="20" size="15" name="Jobcode3" value={{ .Jobcode3 }}></input></ul>
-		<ul>PayRate3: <input type="text" maxlength="20" size="15" name="PayRate3" value={{ .PayRate3 }}></input></ul>
-		<ul>EffectiveDate3: <input type="text" maxlength="20" size="15" name="EffectiveDate3" value={{ .EffectiveDate3 }}></input></ul>
-		<ul>OldRate3: <input type="text" maxlength="20" size="15" name="OldRate3" value={{ .OldRate3 }}></input></ul>
-		<ul>Jobcode4: <input type="text" maxlength="20" size="15" name="Jobcode4" value={{ .Jobcode4 }}></input></ul>
-		<ul>PayRate4: <input type="text" maxlength="20" size="15" name="PayRate4" value={{ .PayRate4 }}></input></ul>
-		<ul>EffectiveDate4: <input type="text" maxlength="20" size="15" name="EffectiveDate4" value={{ .EffectiveDate4 }}></input></ul>
-		<ul>OldRate4: <input type="text" maxlength="20" size="15" name="OldRate4" value={{ .OldRate4 }}></input></ul>
-		<ul>Jobcode5: <input type="text" maxlength="20" size="15" name="Jobcode5" value={{ .Jobcode5 }}></input></ul>
-		<ul>PayRate5: <input type="text" maxlength="20" size="15" name="PayRate5" value={{ .PayRate5 }}></input></ul>
-		<ul>EffectiveDate5: <input type="text" maxlength="20" size="15" name="EffectiveDate5" value={{ .EffectiveDate5 }}></input></ul>
-		<ul>OldRate5: <input type="text" maxlength="20" size="15" name="OldRate5" value={{ .OldRate5 }}></input></ul>
-		<ul>Overtime1: <input type="text" maxlength="20" size="15" name="Overtime1" value={{ .Overtime1 }}></input></ul>
-		<ul>Overtime2: <input type="text" maxlength="20" size="15" name="Overtime2" value={{ .Overtime2 }}></input></ul>
-		<ul>Overtime3: <input type="text" maxlength="20" size="15" name="Overtime3" value={{ .Overtime3 }}></input></ul>
-		<ul>Overtime4: <input type="text" maxlength="20" size="15" name="Overtime4" value={{ .Overtime4 }}></input></ul>
-		<ul>Overtime5: <input type="text" maxlength="20" size="15" name="Overtime5" value={{ .Overtime5 }}></input></ul>
-		<ul>Gender: <input type="text" maxlength="20" size="15" name="Gender" value={{ .Gender }}></input></ul>
-		<ul>PayrollID: <input type="text" maxlength="20" size="15" name="PayrollID" value={{ .PayrollID }}></input></ul>
-		<ul>StateAllowances: <input type="text" maxlength="20" size="15" name="StateAllowances" value={{ .StateAllowances }}></input></ul>
-		<ul>TransferToStore: <input type="text" maxlength="20" size="15" name="TransferToStore" value={{ .TransferToStore }}></input></ul>
-		<ul>MiddleInitial: <input type="text" maxlength="20" size="15" name="MiddleInitial" value={{ .MiddleInitial }}></input></ul>
-		<ul>AdditionalWithholding: <input type="text" maxlength="20" size="15" name="AdditionalWithholding" value={{ .AdditionalWithholding }}></input></ul>
+		<ul>Employee Number: <input type="text" maxlength="5" size="4" name="employeeNumber" value={{ .EmployeeNumber }}></input></ul>
+		<ul>Employee ID: <input type="text" maxlength="20" size="15" name="employeeID" value={{ .EmployeeID }}></input></ul>
+		<ul>Unit: <input type="text" maxlength="20" size="15" name="unit" value={{ .Unit }}></input></ul>
+		<ul>SSN: <input type="password" maxlength="20" size="15" name="ssn" value={{ .SSN }}></input></ul>
+		<ul>First Name: <input type="text" maxlength="20" size="15" name="firstName" value={{ .FirstName }}></input></ul>
+		<ul>Last Name: <input type="text" maxlength="20" size="15" name="lastName" value={{ .LastName }}></input></ul>
+		<ul>Address: <input type="text" maxlength="20" size="15" name="address" value={{ .Address }}></input></ul>
+		<ul>City: <input type="text" maxlength="20" size="15" name="city" value={{ .City }}></input></ul>
+		<ul>State: <input type="text" maxlength="20" size="15" name="state" value={{ .State }}></input></ul>
+		<ul>Zip: <input type="text" maxlength="20" size="15" name="zip" value={{ .Zip }}></input></ul>
+		<ul>Phone: <input type="text" maxlength="20" size="15" name="phone" value={{ .Phone }}></input></ul>
+		<ul>BirthDate: <input type="text" maxlength="20" size="15" name="birthDate" value={{ .BirthDate }}></input></ul>
+		<ul>HireDate: <input type="text" maxlength="20" size="15" name="hireDate" value={{ .HireDate }}></input></ul>
+		<ul>PreviousSSN: <input type="text" maxlength="20" size="15" name="previousSSN" value={{ .PreviousSSN }}></input></ul>
+		<ul>W4Status: <input type="text" maxlength="20" size="15" name="w4Status" value={{ .W4Status }}></input></ul>
+		<ul>Allowances: <input type="text" maxlength="20" size="15" name="allowances" value={{ .Allowances }}></input></ul>
+		<ul>EffectDate: <input type="text" maxlength="20" size="15" name="effectiveDate" value={{ .EffectDate }}></input></ul>
+		<ul>CurrentRate: <input type="text" maxlength="20" size="15" name="currentRate" value={{ .CurrentRate }}></input></ul>
+		<ul>PreviousRate: <input type="text" maxlength="20" size="15" name="previousRate" value={{ .PreviousRate }}></input></ul>
+		<ul>Jobcode: <input type="text" maxlength="20" size="15" name="jobCode" value={{ .Jobcode }}></input></ul>
+		<ul>CrewRate: <input type="text" maxlength="20" size="15" name="crewRate" value={{ .CrewRate }}></input></ul>
+		<ul>OtherRate: <input type="text" maxlength="20" size="15" name="otherRate" value={{ .OtherRate }}></input></ul>
+		<ul>PermanentSupervisor: <input type="text" maxlength="20" size="15" name="permanentSupervisor" value={{ .PermanentSupervisor }}></input></ul>
+		<ul>SalariedManager: <input type="text" maxlength="20" size="15" name="salariedManager" value={{ .SalariedManager }}></input></ul>
+		<ul>Terminated: <input type="text" maxlength="20" size="15" name="terminated" value={{ .Terminated }}></input></ul>
+		<ul>Fired: <input type="text" maxlength="20" size="15" name="fired" value={{ .Fired }}></input></ul>
+		<ul>ReHire: <input type="text" maxlength="20" size="15" name="reHire" value={{ .ReHire }}></input></ul>
+		<ul>TerminationReason: <input type="text" maxlength="20" size="15" name="terminationReason" value={{ .TerminationReason }}></input></ul>
+		<ul>TerminatedDate: <input type="text" maxlength="20" size="15" name="terminatedDate" value={{ .TerminatedDate }}></input></ul>
+		<ul>Jobcode2: <input type="text" maxlength="20" size="15" name="jobCode2" value={{ .Jobcode2 }}></input></ul>
+		<ul>PayRate2: <input type="text" maxlength="20" size="15" name="payRate2" value={{ .PayRate2 }}></input></ul>
+		<ul>EffectiveDate2: <input type="text" maxlength="20" size="15" name="effectiveDate2" value={{ .EffectiveDate2 }}></input></ul>
+		<ul>OldRate2: <input type="text" maxlength="20" size="15" name="oldRate2" value={{ .OldRate2 }}></input></ul>
+		<ul>Jobcode3: <input type="text" maxlength="20" size="15" name="jobCode3" value={{ .Jobcode3 }}></input></ul>
+		<ul>PayRate3: <input type="text" maxlength="20" size="15" name="payRate3" value={{ .PayRate3 }}></input></ul>
+		<ul>EffectiveDate3: <input type="text" maxlength="20" size="15" name="effectiveDate3" value={{ .EffectiveDate3 }}></input></ul>
+		<ul>OldRate3: <input type="text" maxlength="20" size="15" name="oldRate3" value={{ .OldRate3 }}></input></ul>
+		<ul>Jobcode4: <input type="text" maxlength="20" size="15" name="jobCode4" value={{ .Jobcode4 }}></input></ul>
+		<ul>PayRate4: <input type="text" maxlength="20" size="15" name="payRate4" value={{ .PayRate4 }}></input></ul>
+		<ul>EffectiveDate4: <input type="text" maxlength="20" size="15" name="effectiveDate4" value={{ .EffectiveDate4 }}></input></ul>
+		<ul>OldRate4: <input type="text" maxlength="20" size="15" name="oldRate4" value={{ .OldRate4 }}></input></ul>
+		<ul>Jobcode5: <input type="text" maxlength="20" size="15" name="jobCode5" value={{ .Jobcode5 }}></input></ul>
+		<ul>PayRate5: <input type="text" maxlength="20" size="15" name="payRate5" value={{ .PayRate5 }}></input></ul>
+		<ul>EffectiveDate5: <input type="text" maxlength="20" size="15" name="effectiveDate5" value={{ .EffectiveDate5 }}></input></ul>
+		<ul>OldRate5: <input type="text" maxlength="20" size="15" name="oldRate5" value={{ .OldRate5 }}></input></ul>
+		<ul>Overtime1: <input type="text" maxlength="20" size="15" name="overtime1" value={{ .Overtime1 }}></input></ul>
+		<ul>Overtime2: <input type="text" maxlength="20" size="15" name="overtime2" value={{ .Overtime2 }}></input></ul>
+		<ul>Overtime3: <input type="text" maxlength="20" size="15" name="overtime3" value={{ .Overtime3 }}></input></ul>
+		<ul>Overtime4: <input type="text" maxlength="20" size="15" name="overtime4" value={{ .Overtime4 }}></input></ul>
+		<ul>Overtime5: <input type="text" maxlength="20" size="15" name="overtime5" value={{ .Overtime5 }}></input></ul>
+		<ul>Gender: <input type="text" maxlength="20" size="15" name="gender" value={{ .Gender }}></input></ul>
+		<ul>PayrollID: <input type="text" maxlength="20" size="15" name="payrollID" value={{ .PayrollID }}></input></ul>
+		<ul>StateAllowances: <input type="text" maxlength="20" size="15" name="stateAllowances" value={{ .StateAllowances }}></input></ul>
+		<ul>TransferToStore: <input type="text" maxlength="20" size="15" name="transferTostore" value={{ .TransferToStore }}></input></ul>
+		<ul>MiddleInitial: <input type="text" maxlength="20" size="15" name="middleInitial" value={{ .MiddleInitial }}></input></ul>
+		<ul>AdditionalWithholding: <input type="text" maxlength="20" size="15" name="additionalWithholding" value={{ .AdditionalWithholding }}></input></ul>
 		<ul>TaxExempt: <input type="text" maxlength="20" size="15" name="TaxExempt" value={{ .TaxExempt }}></input></ul>
-		<ul>MaidenName: <input type="text" maxlength="20" size="15" name="MaidenName" value={{ .MaidenName }}></input></ul>
-		<ul>ImportDate: <input type="text" maxlength="20" size="15" name="ImportDate" value={{ .ImportDate }}></input></ul>
-		<ul>Race: <input type="text" maxlength="20" size="15" name="Race" value={{ .Race }}></input></ul>
-		<ul>BorrowedEmployee: <input type="text" maxlength="20" size="15" name="BorrowedEmployee" value={{ .BorrowedEmployee }}></input></ul>
-		<ul>HomeStore: <input type="text" maxlength="20" size="15" name="HomeStore" value={{ .HomeStore }}></input></ul>
-		<ul>I9Code: <input type="text" maxlength="20" size="15" name="I9Code" value={{ .I9Code }}></input></ul>
-		<ul>InfoSent: <input type="text" maxlength="20" size="15" name="InfoSent" value={{ .InfoSent }}></input></ul>
-		<ul>DateSent: <input type="text" maxlength="20" size="15" name="DateSent" value={{ .DateSent }}></input></ul>
-		<ul>BonusEligible: <input type="text" maxlength="20" size="15" name="BonusEligible" value={{ .BonusEligible }}></input></ul>
-		<ul>BonusRate: <input type="text" maxlength="20" size="15" name="BonusRate" value={{ .BonusRate }}></input></ul>
-		<ul>SalaryClockIn: <input type="text" maxlength="20" size="15" name="SalaryClockIn" value={{ .SalaryClockIn }}></input></ul>
-		<ul>InSchool: <input type="text" maxlength="20" size="15" name="InSchool" value={{ .InSchool }}></input></ul>
-		<ul>VacationSchedule: <input type="text" maxlength="20" size="15" name="VacationSchedule" value={{ .VacationSchedule }}></input></ul>
-		<ul>HRDocuments: <input type="text" maxlength="20" size="15" name="HRDocuments" value={{ .HRDocuments }}></input></ul>
-		<ul>ApartmentNumber: <input type="text" maxlength="20" size="15" name="ApartmentNumber" value={{ .ApartmentNumber }}></input></ul>
-		<ul>DepositType: <input type="text" maxlength="20" size="15" name="DepositType" value={{ .DepositType }}></input></ul>
-		<ul>RoutingNumber: <input type="text" maxlength="20" size="15" name="RoutingNumber" value={{ .RoutingNumber }}></input></ul>
-		<ul>AccountType: <input type="text" maxlength="20" size="15" name="AccountType" value={{ .AccountType }}></input></ul>
-		<ul>AccountNumber: <input type="text" maxlength="20" size="15" name="AccountNumber" value={{ .AccountNumber }}></input></ul>
-		<ul>EmailAddress: <input type="text" maxlength="20" size="15" name="EmailAddress" value={{ .EmailAddress }}></input></ul>
-		<ul>ManagerNote: <input type="text" maxlength="20" size="15" name="ManagerNote" value={{ .ManagerNote }}></input></ul>
-		<ul>InactiveEmployee: <input type="text" maxlength="20" size="15" name="InactiveEmployee" value={{ .InactiveEmployee }}></input></ul>
-		<ul>IDNumber: <input type="text" maxlength="20" size="15" name="IDNumber" value={{ .IDNumber }}></input></ul>
-		<ul>PreviousIDNumber: <input type="text" maxlength="20" size="15" name="PreviousIDNumber" value={{ .PreviousIDNumber }}></input></ul>		
+		<ul>MaidenName: <input type="text" maxlength="20" size="15" name="maidenName" value={{ .MaidenName }}></input></ul>
+		<ul>ImportDate: <input type="text" maxlength="20" size="15" name="importDate" value={{ .ImportDate }}></input></ul>
+		<ul>Race: <input type="text" maxlength="20" size="15" name="race" value={{ .Race }}></input></ul>
+		<ul>BorrowedEmployee: <input type="text" maxlength="20" size="15" name="borrowedEmployee" value={{ .BorrowedEmployee }}></input></ul>
+		<ul>HomeStore: <input type="text" maxlength="20" size="15" name="homeStore" value={{ .HomeStore }}></input></ul>
+		<ul>I9Code: <input type="text" maxlength="20" size="15" name="i9Code" value={{ .I9Code }}></input></ul>
+		<ul>InfoSent: <input type="text" maxlength="20" size="15" name="infoSent" value={{ .InfoSent }}></input></ul>
+		<ul>DateSent: <input type="text" maxlength="20" size="15" name="dateSent" value={{ .DateSent }}></input></ul>
+		<ul>BonusEligible: <input type="text" maxlength="20" size="15" name="bonusEligible" value={{ .BonusEligible }}></input></ul>
+		<ul>BonusRate: <input type="text" maxlength="20" size="15" name="bonusRate" value={{ .BonusRate }}></input></ul>
+		<ul>SalaryClockIn: <input type="text" maxlength="20" size="15" name="salaryClockIn" value={{ .SalaryClockIn }}></input></ul>
+		<ul>InSchool: <input type="text" maxlength="20" size="15" name="inSchool" value={{ .InSchool }}></input></ul>
+		<ul>VacationSchedule: <input type="text" maxlength="20" size="15" name="vacationSchedule" value={{ .VacationSchedule }}></input></ul>
+		<ul>HRDocuments: <input type="text" maxlength="20" size="15" name="hrDocuments" value={{ .HRDocuments }}></input></ul>
+		<ul>ApartmentNumber: <input type="text" maxlength="20" size="15" name="apartmentNumber" value={{ .ApartmentNumber }}></input></ul>
+		<ul>DepositType: <input type="text" maxlength="20" size="15" name="depositType" value={{ .DepositType }}></input></ul>
+		<ul>RoutingNumber: <input type="text" maxlength="20" size="15" name="routingNumber" value={{ .RoutingNumber }}></input></ul>
+		<ul>AccountType: <input type="text" maxlength="20" size="15" name="accountType" value={{ .AccountType }}></input></ul>
+		<ul>AccountNumber: <input type="text" maxlength="20" size="15" name="accountNumber" value={{ .AccountNumber }}></input></ul>
+		<ul>EmailAddress: <input type="text" maxlength="20" size="15" name="emailAddress" value={{ .EmailAddress }}></input></ul>
+		<ul>ManagerNote: <input type="text" maxlength="20" size="15" name="managerNote" value={{ .ManagerNote }}></input></ul>
+		<ul>InactiveEmployee: <input type="text" maxlength="20" size="15" name="inactiveEmployee" value={{ .InactiveEmployee }}></input></ul>
+		<ul>IDNumber: <input type="text" maxlength="20" size="15" name="idNumber" value={{ .IDNumber }}></input></ul>
+		<ul>PreviousIDNumber: <input type="text" maxlength="20" size="15" name="previousIdnumber" value={{ .PreviousIDNumber }}></input></ul>		
      {{end}}
 	 </ul>
 </form>
@@ -478,6 +551,7 @@ const docList = `
  `
 
 /*
-http://localhost:5000/getemployees?copyfromemployee=1005
-http://localhost:5000/postemployees?employee=1005&org=TJCorp&inventory_group=TJCorpQSPOS2&company=TJCorp&market=TJCorp&dm=Kevin+Kreutzer&street=101+South+Greeley+Highway&city=Cheyenne&state=WY&zip=82007&employee_name=S+Greeley&phone=3076341555&concept=TacoJohn&consent=1&region=Corp&fbc=FBC+B+Davis&coop=CoOp+Cheyenne&dc=FSA+Loveland&plu_category=REGLR&labor_guide=TJC&import_group=TJSynchAll&pos=QSP11&error_guide=2&computer=TjCorp&account=TJCorp&vendor=TJCor&facility=&quickcook=Y&new_construct=&reader=0&longitude=-104.8031900&latitude=41.1163400&golive=2012-04-24&fiscal_seed=2012-12-31&tax=0.06&state_tax=0.06000
+http://localhost:5000/getemployees?copyfromemployee=85
+http://localhost:5000/postemployees?employeeID=010030000000065&unit=1003&employeeNumber=21602&ssn=555555555&lastName=Buskohl&firstName=Kathy
+http://localhost:5000/postemployees?employeeNumber=21602&employeeID=010030000000065&unit=1003&ssn=524118880&firstName=Kathy&lastName=Buskohl
 */

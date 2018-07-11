@@ -213,88 +213,89 @@ func GetEmployees(w http.ResponseWriter, r *http.Request) {
 
 	//sql := `Exec get_employee_attributes $1`
 	sql := `select 
-		  rtrim(e.[Empl_ID]) as Empl_ID
-		, rtrim(e.[Store_no]) as Store_no
-		, rtrim(e.[Emp_no]) as Emp_no
-		, rtrim(e.[SSN]) as SSN
-		, rtrim(e.[Last_Name]) as Last_Name
-		, rtrim(e.[First_Name]) as First_Name
-		, rtrim(e.[Address]) as Address
-		, rtrim(e.[City]) as City
-		, rtrim(e.[State]) as State
-		, rtrim(e.[Zip]) as Zip
-		, rtrim(e.[Phone]) as Phone
-		, e.[Birth_Dt]
-		, e.[Hire_Date]
-		, rtrim(e.[Prev_SSN]) as Prev_SSN
-		, rtrim(e.[W4Status]) as W4Status
-		, rtrim(e.[Allowances]) as Allowances
-		, e.[Effect_Dt]
-		, e.[Curr_Rate]
-		, e.[Prev_Rate]
-		, rtrim(e.[Jobcode]) as Jobcode
-		, e.[CrewRate]
-		, e.[OtherRate]
-		, e.[PermSupervisor]
-		, e.[SalariedMgr]
-		, e.[Term]
-		, e.[Fired]
-		, e.[ReHire]
-		, rtrim(e.[Term_Reason]) as Term_Reason
-		, e.[DateTermed]
-		, e.[Jobcode2]
-		, e.[PayRate2]
-		, e.[Effec_Dt2]
-		, e.[OldRate2]
-		, e.[Jobcode3]
-		, e.[PayRate3]
-		, e.[Effec_Dt3]
-		, e.[OldRate3]
-		, e.[Jobcode4]
-		, e.[PayRate4]
-		, e.[Effec_Dt4]
-		, e.[OldRate4]
-		, e.[Jobcode5]
-		, e.[PayRate5]
-		, e.[Effec_Dt5]
-		, e.[OldRate5]
-		, e.[Overtime1]
-		, e.[Overtime2]
-		, e.[Overtime3]
-		, e.[Overtime4]
-		, e.[Overtime5]
-		, rtrim(e.[Gender]) as Gender
-		, rtrim(e.[PayrollID]) as PayrollID
-		, rtrim(e.[StateAllowances]) as StateAllowances
-		, rtrim(e.[TransferToStore]) as TransferToStore
-		, rtrim(e.[MiddleInitial]) as MiddleInitial
-		, e.[AddlWithholding]
-		, e.[TaxExempt]
-		, rtrim(e.[MaidenName]) as MaidenName
-		, e.[Import_Date]
-		, rtrim(e.[Race]) as Race
-		, e.[BorrowedEmpl]
-		, rtrim(e.[HomeStore]) as HomeStore
-		, e.[I9Code]
-		, e.[Info_Sent]
-		, e.[Date_Sent]
-		, e.[BonusEligible]
-		, e.[BonusRate]
-		, e.[SalaryClockIn]
-		, e.[InSchool]
-		, e.[VacationSchedule]
-		, e.[HRDocuments]
-		, e.[AptNumber]
-		, e.[DepositType]
-		, e.[RoutingNumber]
-		, e.[AccountType]
-		, e.[AccountNumber]
-		, e.[EmailAddress]
-		, e.[ManagerNote]
-		, e.[InactiveEmpl]
-		, e.[IDNumber]
-		, e.[PrevIDNumber] 
-		from dev_Empls e where Emp_no=$1`
+			rtrim(e.[Empl_ID]) as Empl_ID
+			, rtrim(e.[Store_no]) as Store_no
+			, rtrim(e.[Emp_no]) as Emp_no
+			, rtrim(e.[SSN]) as SSN
+			, rtrim(e.[Last_Name]) as Last_Name
+			, rtrim(e.[First_Name]) as First_Name
+			, rtrim(e.[Address]) as Address
+			, rtrim(e.[City]) as City
+			, rtrim(e.[State]) as State
+			, rtrim(e.[Zip]) as Zip
+			, rtrim(e.[Phone]) as Phone
+			, e.[Birth_Dt]
+			, e.[Hire_Date]
+			, rtrim(e.[Prev_SSN]) as Prev_SSN
+			, rtrim(e.[W4Status]) as W4Status
+			, rtrim(e.[Allowances]) as Allowances
+			, e.[Effect_Dt]
+			, e.[Curr_Rate]
+			, e.[Prev_Rate]
+			, rtrim(e.[Jobcode]) as Jobcode
+			, e.[CrewRate]
+			, e.[OtherRate]
+			, e.[PermSupervisor]
+			, e.[SalariedMgr]
+			, e.[Term]
+			, e.[Fired]
+			, e.[ReHire]
+			, rtrim(e.[Term_Reason]) as Term_Reason
+			, e.[DateTermed]
+			, e.[Jobcode2]
+			, e.[PayRate2]
+			, e.[Effec_Dt2]
+			, e.[OldRate2]
+			, e.[Jobcode3]
+			, e.[PayRate3]
+			, e.[Effec_Dt3]
+			, e.[OldRate3]
+			, e.[Jobcode4]
+			, e.[PayRate4]
+			, e.[Effec_Dt4]
+			, e.[OldRate4]
+			, e.[Jobcode5]
+			, e.[PayRate5]
+			, e.[Effec_Dt5]
+			, e.[OldRate5]
+			, e.[Overtime1]
+			, e.[Overtime2]
+			, e.[Overtime3]
+			, e.[Overtime4]
+			, e.[Overtime5]
+			, rtrim(e.[Gender]) as Gender
+			, rtrim(e.[PayrollID]) as PayrollID
+			, rtrim(e.[StateAllowances]) as StateAllowances
+			, rtrim(e.[TransferToStore]) as TransferToStore
+			, rtrim(e.[MiddleInitial]) as MiddleInitial
+			, e.[AddlWithholding]
+			, e.[TaxExempt]
+			, rtrim(e.[MaidenName]) as MaidenName
+			, isnull(e.[Import_Date],'1/1/1900') as Import_Date
+			, rtrim(e.[Race]) as Race
+			, e.[BorrowedEmpl]
+			, rtrim(isnull(e.[HomeStore],'')) as HomeStore
+			, isnull(e.[I9Code],'') as I9Code
+			, e.[Info_Sent]
+			, isnull(e.[Date_Sent],'1/1/1900') as Date_Sent
+			, e.[BonusEligible]
+			, isnull(e.[BonusRate],0) as BonusRate
+			, e.[SalaryClockIn]
+			, e.[InSchool]
+			, isnull(e.[VacationSchedule],0) as VacationSchedule
+			, isnull(e.[HRDocuments],'') as HRDocuments
+			, isnull(e.[AptNumber],'') as AptNumber
+			, isnull(e.[DepositType],'') as DepositType
+			, isnull(e.[RoutingNumber],'') as RoutingNumber
+			, isnull(e.[AccountType],'') as AccountType
+			, isnull(e.[AccountNumber],'') as AccountNumber
+			, isnull(e.[EmailAddress],'') as EmailAddress
+			, isnull(e.[ManagerNote],'') as ManagerNote
+			, isnull(e.[InactiveEmpl],'') as InactiveEmpl
+			, isnull(e.[IDNumber],'') as IDNumber
+			, isnull(e.[PrevIDNumber],'') as PrevIDNumber 
+			from dev_Empls e where Emp_no=$1`
+
 	getemployees := []GetEmployee{}
 	err := DB().Select(&getemployees, sql, copyfromemployee)
 	if err != nil {
